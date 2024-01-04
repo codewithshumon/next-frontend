@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  user-select: none;
+  height: 100vh;
+  padding: 3em;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.overlay {
+  background: black;
+  color: wheat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  clip-path: circle(100px at 50% 50%);
+  transition: clip-path 100ms ease-in-out;
+}
+
+span {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: chocolate;
+  display: flex;
+  cursor: pointer;
+}
+
+svg {
+  margin: 1em;
+  fill: white;
+}
+
+// .overlay.is-open {
+//   clip-path: circle(200px at 100% 100%);
+//   transition: clip-path 2s ease-in-out;
+//   transition-timing-function: cubic-bezier(1, -0.01, 0.01, 0.99);
+// }
+
+// .is-open {
+//   clip-path: circle(200% at 100% 100%);
+//   transition: clip-path 1.3s ease-in-out;
+//   transition-timing-function: cubic-bezier(1, -0.01, 0.01, 0.99);
+// }
