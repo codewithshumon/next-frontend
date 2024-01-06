@@ -26,7 +26,7 @@ const HoverMask = () => {
     //   //setIsOpenClicked(!isOpenClicked);
     // });
 
-    console.log('isOpenClicked', isOpenClicked);
+    //console.log('isOpenClicked', isOpenClicked);
     if (isOpenClicked) {
       overlay.style.setProperty('clip-path', `circle(200% at 100% 100%)`);
       overlay.style.setProperty('transition', `clip-path .5s ease-in-out`);
